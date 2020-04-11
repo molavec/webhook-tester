@@ -119,6 +119,15 @@ A test sequence could be
  * make a call to your API that is supposed to trigger the webhook call
  * the webhook test request will be called. If the webhook had a request body, you will get it as a response body
 
+Creates (register) webhooks before used.
+
+ Use cases examples:
+
+ * Create dinamically webhooks
+ * Set some restrictions in data received
+ * Avoid saturate server test with big connections received
+ * Avoid keep connections open.
+
 
 #### Require in your test files
 You only need to start it once but it doesn't matter if you call start multiple times.
@@ -132,6 +141,8 @@ webhookTester.start(); // Required. You can optionnally pass a function to get t
 ```
 
 ## Dockerize
+
+**NOTE:** Delete `log` and `node_modules`directory frist.
 
 You can build a container using Dockerfile
 

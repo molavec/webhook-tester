@@ -1,9 +1,9 @@
-* Registros permanentes
-* tester con jest
+* Simplificar el README.md
+* Mejorar los test con jest
+* Automatizar subida del README.md a Docker
+* Crear una interfaz gráfica para gestión de los webhook
 * eliminar webhook
-
-
-
+* Crear un modulo global con NPM
 
 Tests
 
